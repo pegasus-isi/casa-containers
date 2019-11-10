@@ -7,7 +7,7 @@ from ubuntu:18.04
 RUN apt-get update && \
     apt-get -y install apt-utils && \
     apt-get -y upgrade && \
-    apt-get -y install gcc g++ zlib1g-dev libxml2-dev && \
+    apt-get -y install openssh-client gcc g++ zlib1g-dev libxml2-dev && \
     apt-get -y install curl make libnetcdf-dev libpng-dev && \
     apt-get -y install python libconfig-dev bc && \
     apt-get -y install exim4 exim4-config && \
