@@ -1,7 +1,7 @@
 #=========================#
 #  Operating System setup #
 #=========================#
-from ubuntu:18.04
+from ubuntu:20.04
 
 # install basic build environment
 RUN apt-get update && \
@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get -y install openssh-client gcc g++ zlib1g-dev libxml2-dev && \
     apt-get -y install curl make libnetcdf-dev libpng-dev && \
-    apt-get -y install python libconfig-dev bc && \
+    apt-get -y install python3 python3-yaml libconfig-dev bc && \
     apt-get -y install exim4 exim4-config && \
     rm -rf /var/lib/apt/lists/*
 
